@@ -1,0 +1,22 @@
+type: task_block
+title: python_lib_ed0bb8
+icon: https://static.oomol.com/icons/python.png
+executor:
+  name: python_executor
+  entry: __init__.py
+inputs_def:
+  - handle: player_id
+    serialize:
+      serializer: json
+      json_schema:
+        type: string
+  - handle: address
+    serialize:
+      serializer: json
+      json_schema:
+        type: string
+        ui:widget: dir
+outputs_def:
+  - handle: career
+    serialize:
+      serializer: json

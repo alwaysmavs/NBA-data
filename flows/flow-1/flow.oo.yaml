@@ -1,0 +1,19 @@
+nodes:
+  - task: ../../blocks/python_lib_4e4779/block.oo.yaml
+    node_id: 477900ac-ec3e-4245-aead-343865b8ed1c
+    inputs_from:
+      - handle: name
+        cache:
+          initial_value: Stephen Curry
+    title: Find player id by name
+  - task: ../../blocks/python_lib_ed0bb8/block.oo.yaml
+    node_id: 0bb86b87-d299-4648-be57-3f54b731beb2
+    inputs_from:
+      - handle: player_id
+        from_node:
+          - node_id: 477900ac-ec3e-4245-aead-343865b8ed1c
+            output_handle: player_id
+      - handle: address
+        cache:
+          initial_value: /oomol-storage/CSV
+    title: 根据 id 获得生涯数据

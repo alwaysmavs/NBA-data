@@ -1,0 +1,19 @@
+type: task_block
+title: python_lib_4e4779
+icon: https://static.oomol.com/icons/python.png
+executor:
+  name: python_executor
+  entry: __init__.py
+inputs_def:
+  - handle: name
+    serialize:
+      serializer: json
+      json_schema:
+        type: string
+        ui:widget: text
+    cache:
+      initial_value: jame
+outputs_def:
+  - handle: player_id
+    serialize:
+      serializer: json

@@ -1,0 +1,3 @@
+container:
+  scripts:
+    bootstrap: pip install pandas nba_api
